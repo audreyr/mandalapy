@@ -93,11 +93,6 @@ def voronoi_plot_2d(vor, ax=None, **kw):
                                      lw=line_width,
                                      alpha=line_alpha,
                                      linestyle='solid'))
-    ax.add_collection(LineCollection(infinite_segments,
-                                     colors=line_colors,
-                                     lw=line_width,
-                                     alpha=line_alpha,
-                                     linestyle='solid'))
 
     _adjust_bounds(ax, vor.points)
 
